@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/colorPrimaryLight"
+    android:layout_height="match_parent"
+    tools:context=".Post_Form">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardview2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="250dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="346dp"
+        android:backgroundTint="@android:color/transparent"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="2dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingBottom="50dp">
+
+            <EditText
+                android:id="@+id/postForm_source"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:drawableLeft="@drawable/ic_my_source_green_24dp"
+                android:drawablePadding="10dp"
+                android:gravity="left"
+                android:paddingLeft="5dp"
+                android:paddingTop="10dp"
+                android:singleLine="true"
+                android:hint="Source"
+                android:textColor="@color/colorWhite"
+                android:textSize="14sp"
+                android:textColorHint="@color/white"
+                android:textStyle="bold"></EditText>
+
+            <EditText
+                android:id="@+id/postForm_destination"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:drawableLeft="@drawable/ic_add_location_pink_24dp"
+                android:drawablePadding="10dp"
+                android:gravity="left"
+                android:paddingLeft="5dp"
+                android:paddingTop="10dp"
+                android:singleLine="true"
+                android:hint="Final Destination"
+                android:textColor="@color/colorWhite"
+                android:textSize="14sp"
+                android:textColorHint="@color/white"
+                android:textStyle="bold">
+
+            </EditText>
+
+            <EditText
+                android:id="@+id/postForm_numOfStops"
+                android:layout_width="357dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:drawableLeft="@drawable/ic_multiple_locations"
+                android:drawablePadding="10dp"
+                android:gravity="left"
+
+                android:inputType="number"
+                android:paddingLeft="5dp"
+                android:paddingTop="10dp"
+                android:singleLine="true"
+                android:hint="No.of Intermediate Stops"
+                android:textColor="@color/colorWhite"
+                android:textSize="14sp"
+                android:textColorHint="@color/white"
+                android:textStyle="bold"
+
+
+                ></EditText>
+
+
+            <EditText
+                android:id="@+id/postForm_numOfDays"
+                android:layout_width="357dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:drawableLeft="@drawable/ic_format_list_numbered_black_24dp"
+                android:drawablePadding="10dp"
+                android:gravity="left"
+
+                android:inputType="number"
+                android:paddingLeft="5dp"
+                android:paddingTop="10dp"
+                android:singleLine="true"
+                android:hint="No.of Days"
+                android:textColor="@color/colorWhite"
+                android:textSize="14sp"
+                android:textColorHint="@color/white"
+                android:textStyle="bold"
+
+
+                ></EditText>
+
+            <EditText
+                android:id="@+id/postForm_startDate"
+                android:layout_width="357dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:drawableLeft="@drawable/ic_today_black_24dp"
+                android:drawablePadding="10dp"
+                android:gravity="left"
+
+                android:inputType="number"
+                android:paddingLeft="5dp"
+                android:paddingTop="10dp"
+                android:singleLine="true"
+                android:hint="Starting Date"
+                android:textColor="@color/colorWhite"
+                android:textSize="14sp"
+                android:textColorHint="@color/white"
+                android:textStyle="bold"
+
+
+                ></EditText>
+
+            <Button
+                android:id="@+id/next_btn"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="130dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/botton_color"
+                android:gravity="center"
+                android:text="Next"
+                android:textAllCaps="false"
+                android:paddingLeft="25dp"
+
+                android:drawableRight="@drawable/ic_navigate_next_white_24dp"
+                android:textColor="@color/colorWhite"></Button>
+
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

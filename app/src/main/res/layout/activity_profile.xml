@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:elevation="5dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="5dp">
+
+                    <ImageView
+                        android:id="@+id/imageView"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/fairymeadows" />
+
+                    <TextView
+                        android:id="@+id/destination"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginBottom="50dp"
+                        android:background="@color/colorFadedBlue"
+                        android:text="Fairy Meadows"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="25sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/textViewDays"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="140dp"
+                        android:layout_marginRight="-5dp"
+                        android:background="@color/colorFadedBlue"
+                        android:text="10"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/textViewConst"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="140dp"
+                        android:layout_toEndOf="@+id/textViewDays"
+                        android:layout_toRightOf="@+id/textViewDays"
+                        android:text=" days Trip from "
+                        android:background="@color/colorFadedBlue"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/textViewSrc"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="140dp"
+                        android:layout_toEndOf="@+id/textViewConst"
+                        android:layout_toRightOf="@id/imageView"
+                        android:background="@color/colorFadedBlue"
+                        android:text="Lahore"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/textViewDate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:layout_below="@+id/textViewDays"
+
+                        android:background="@color/colorFadedBlue"
+                        android:text="5/10/19"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="20sp" />
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:elevation="5dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="5dp">
+
+                    <ImageView
+                        android:id="@+id/imageView2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/gilgit" />
+
+                    <TextView
+                        android:id="@+id/destination2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginBottom="50dp"
+                        android:background="@color/colorFadedBlue"
+                        android:text="Gilgit Baltistan"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="25sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/textViewDays2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="140dp"
+                        android:layout_marginRight="-5dp"
+                        android:background="@color/colorFadedBlue"
+                        android:text="9"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/textViewConst2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="140dp"
+                        android:layout_toEndOf="@+id/textViewDays2"
+                        android:layout_toRightOf="@+id/textViewDays2"
+                        android:text=" days Trip from "
+                        android:background="@color/colorFadedBlue"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/textViewSrc2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="140dp"
+                        android:layout_toEndOf="@+id/textViewConst2"
+                        android:layout_toRightOf="@id/imageView2"
+                        android:background="@color/colorFadedBlue"
+                        android:text="Lahore"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/textViewDate2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:layout_below="@+id/textViewDays2"
+                        android:background="@color/colorFadedBlue"
+                        android:text="2/9/19"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="20sp" />
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:elevation="5dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="5dp">
+
+                    <ImageView
+                        android:id="@+id/imageView3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/naran" />
+
+                    <TextView
+                        android:id="@+id/destination3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginBottom="50dp"
+                        android:background="@color/colorFadedBlue"
+                        android:text="Naran"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="25sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/textViewDays3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="140dp"
+                        android:layout_marginRight="-5dp"
+                        android:background="@color/colorFadedBlue"
+                        android:text="7"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/textViewConst3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="140dp"
+                        android:layout_toEndOf="@+id/textViewDays3"
+                        android:layout_toRightOf="@+id/textViewDays3"
+                        android:text=" days Trip from "
+                        android:textColor="@color/colorWhite"
+                        android:background="@color/colorFadedBlue"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/textViewSrc3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="140dp"
+                        android:layout_toEndOf="@+id/textViewConst3"
+                        android:layout_toRightOf="@id/imageView3"
+                        android:background="@color/colorFadedBlue"
+                        android:text="Lahore"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/textViewDate3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:layout_below="@+id/textViewDays3"
+                        android:background="@color/colorFadedBlue"
+                        android:text="5/7/19"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="20sp" />
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:elevation="5dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="5dp">
+
+                    <ImageView
+                        android:id="@+id/imageView4"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/rattigalli" />
+
+                    <TextView
+                        android:id="@+id/destination4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginBottom="50dp"
+                        android:background="@color/colorFadedBlue"
+                        android:text="Gilgit Baltistan"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="25sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/textViewDays4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="140dp"
+                        android:layout_marginRight="-5dp"
+                        android:background="@color/colorFadedBlue"
+                        android:text="9"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/textViewConst4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="140dp"
+                        android:layout_toEndOf="@+id/textViewDays4"
+                        android:layout_toRightOf="@+id/textViewDays4"
+                        android:text=" days Trip from "
+                        android:background="@color/colorFadedBlue"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/textViewSrc4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="140dp"
+                        android:layout_toEndOf="@+id/textViewConst4"
+                        android:layout_toRightOf="@id/imageView4"
+                        android:background="@color/colorFadedBlue"
+                        android:text="Lahore"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/textViewDate4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:layout_below="@+id/textViewDays4"
+                        android:background="@color/colorFadedBlue"
+                        android:text="2/9/19"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="20sp" />
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+</LinearLayout>

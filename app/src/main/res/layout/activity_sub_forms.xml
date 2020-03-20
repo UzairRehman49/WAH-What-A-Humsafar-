@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SubFormsActivity"
+    android:background="@color/colorPrimaryLight">
+
+
+    <Button
+        android:id="@+id/MakePostButton"
+        android:layout_width="91dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="320dp"
+        android:layout_marginTop="4dp"
+        android:text="Post"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </Button>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:id="@+id/final_dest_name"
+            android:background="@color/colorFadedGrey"
+            android:fontFamily="casual"
+            android:paddingLeft="5dp"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/my_textsize"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"></TextView>
+
+        <EditText
+            android:id="@+id/dest_transport_txtview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="How did you reach there?"
+            android:singleLine="true"></EditText>
+
+        <EditText
+            android:id="@+id/dest_stay_txtview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Where did you stay?"
+            android:singleLine="true">
+
+        </EditText>
+
+        <EditText
+            android:id="@+id/dest_price_txtview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Cost?"
+            android:singleLine="true"></EditText>
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/Recycler_view_subforms"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="1dp"
+            android:layout_marginTop="1dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/MakePostButton" />
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

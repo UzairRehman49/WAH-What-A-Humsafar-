@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+   >
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/profile_cardview_info"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:elevation="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.mikhaellopez.circularimageview.CircularImageView
+                android:id="@+id/Profile_ImageView_DP"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/babusar"
+                app:civ_border_color="#3f51b5"
+                app:civ_border_width="4dp"
+                app:civ_shadow="true"
+                app:civ_shadow_color="#3f51b5"
+                app:civ_shadow_radius="5"
+                app:layout_constraintBottom_toTopOf="@+id/Profile_TextView_Username"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/Profile_TextView_Username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hassan Minhas"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/Profile_ImageView_DP"
+                tools:layout_editor_absoluteY="137dp">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/logout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Log Out"
+                tools:layout_editor_absoluteX="299dp"
+                tools:layout_editor_absoluteY="154dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintTop_toBottomOf="@+id/Profile_TextView_Username"
+                app:layout_constraintStart_toStartOf="parent"
+                />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/profile_cardview_post"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/backgroung"
+        android:elevation="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profile_cardview_info">
+
+        <com.mikhaellopez.circularimageview.CircularImageView
+            android:id="@+id/Profile_ImageView_DPpost"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/babusar"
+            app:civ_border_color="#3f51b5"
+            app:civ_border_width="4dp"
+            app:civ_shadow="true"
+            app:civ_shadow_color="#3f51b5"
+            app:civ_shadow_radius="5"
+            app:layout_constraintBottom_toTopOf="@+id/Profile_TextView_Username"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="348dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="65dp"
+            android:layout_marginTop="15dp"
+            android:id="@+id/profile_textview_Whatsonurmind"
+            android:text="What's on your mind?"
+            android:textColor="@color/quantum_grey400"
+            android:textSize="20sp">
+
+        </TextView>
+
+    </androidx.cardview.widget.CardView>
+
+
+
+    <TextView
+        android:id="@+id/Profile_TextView_LabelOfPosts"
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="73dp"
+        android:text="Posts"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profile_cardview_info"></TextView>
+
+    <ProgressBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/Profile_TextView_LabelOfPosts"
+        app:layout_constraintStart_toEndOf="@+id/Profile_TextView_LabelOfPosts"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:id="@+id/makePostProgBar"
+        >
+    </ProgressBar>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/Profile_RecyclerView_UserPosts"
+        android:layout_width="406dp"
+        android:layout_height="436dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Profile_TextView_LabelOfPosts">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

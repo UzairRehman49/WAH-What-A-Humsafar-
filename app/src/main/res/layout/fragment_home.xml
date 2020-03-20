@@ -1,0 +1,517 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:id="@+id/linearName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="300dp"
+                    android:layout_height="@dimen/myname_height"
+                    android:fontFamily="casual"
+                    android:text="Zohaib Nafees"
+                    android:background="@color/colorPrimaryLight"
+                    android:textColor="@color/colorWhite"
+                    android:paddingLeft="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:textSize="@dimen/my_textsize"
+                    android:textStyle="bold"
+                    android:layout_marginRight="5dp"
+                    >
+                </TextView>
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="@dimen/myname_height"
+                    android:fontFamily="sans-serif-condensed-light"
+                    android:layout_gravity="center_horizontal"
+                    android:text="4 HOURS AGO"
+                    android:background="@color/colorPrimaryLight"
+                    android:textColor="@color/Dullblack"
+                    android:paddingLeft="5dp"
+                    android:layout_marginLeft="-5dp"
+                    android:layout_marginRight="5dp"
+                    >
+                </TextView>
+            </LinearLayout>
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/swatCard"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:elevation="5dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="5dp"
+                    >
+
+                    <ImageView
+                        android:id="@+id/imageView"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/swat"
+                        />
+
+                    <TextView
+                        android:id="@+id/destination"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginBottom="50dp"
+                        android:background="@color/colorFadedBlue"
+                        android:text="Swat"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="25sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/textViewDays"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="140dp"
+                        android:layout_marginRight="-5dp"
+                        android:background="@color/colorFadedBlue"
+                        android:text="4"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/textViewConst"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="140dp"
+                        android:layout_toEndOf="@+id/textViewDays"
+                        android:layout_toRightOf="@+id/textViewDays"
+                        android:text=" days Trip from "
+                        android:background="@color/colorFadedBlue"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/textViewSrc"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="140dp"
+                        android:layout_toEndOf="@+id/textViewConst"
+                        android:layout_toRightOf="@id/imageView"
+                        android:background="@color/colorFadedBlue"
+                        android:text="Lahore"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/textViewDate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/textViewDays"
+                        android:background="@color/colorFadedBlue"
+                        android:text="30/12/19"
+                        android:textColor="@color/colorWhite"
+                        android:drawableRight="@drawable/ic_favorite_black_24dp"
+                        android:textSize="20sp" />
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="space"
+                android:textColor="@color/colorWhite"
+                android:background="@color/colorWhite">
+
+            </TextView>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="300dp"
+                    android:layout_height="@dimen/myname_height"
+                    android:fontFamily="casual"
+                    android:text="Maarij Fatima"
+                    android:background="@color/colorPrimaryLight"
+                    android:textColor="@color/colorWhite"
+                    android:paddingLeft="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/my_textsize"
+                    android:layout_marginRight="5dp"
+                    >
+                </TextView>
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="@dimen/myname_height"
+                    android:fontFamily="sans-serif-condensed-light"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="-5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@color/colorPrimaryLight"
+                    android:paddingLeft="15dp"
+                    android:text="2 DAYS AGO"
+                    android:textColor="@color/Dullblack"
+
+
+                    ></TextView>
+            </LinearLayout>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/ayubiaCard"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:elevation="5dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="5dp">
+
+                    <ImageView
+                        android:id="@+id/imageView2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/ayubia" />
+
+                    <TextView
+                        android:id="@+id/destination2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginBottom="50dp"
+                        android:background="@color/colorFadedBlue"
+                        android:text="Ayubia"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="25sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/textViewDays2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="140dp"
+                        android:layout_marginRight="-5dp"
+                        android:background="@color/colorFadedBlue"
+                        android:text="6"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/textViewConst2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="140dp"
+                        android:layout_toEndOf="@+id/textViewDays2"
+                        android:layout_toRightOf="@+id/textViewDays2"
+                        android:text=" days Trip from "
+                        android:background="@color/colorFadedBlue"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/textViewSrc2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="140dp"
+                        android:layout_toEndOf="@+id/textViewConst2"
+                        android:layout_toRightOf="@id/imageView2"
+                        android:background="@color/colorFadedBlue"
+                        android:text="Lahore"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/textViewDate2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/textViewDays2"
+                        android:background="@color/colorFadedBlue"
+                        android:text="28/12/19"
+                        android:drawableRight="@drawable/ic_favorite_black_24dp"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="20sp" />
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="space"
+                android:textColor="@color/colorWhite"
+                android:background="@color/colorWhite">
+
+            </TextView>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="300dp"
+                    android:layout_height="@dimen/myname_height"
+                    android:fontFamily="casual"
+                    android:text="Uzair Rehman"
+                    android:background="@color/colorPrimaryLight"
+                    android:textColor="@color/colorWhite"
+                    android:paddingLeft="5dp"
+                    android:textSize="@dimen/my_textsize"
+                    android:layout_marginLeft="5dp"
+                    android:textStyle="bold"
+                    android:layout_marginRight="5dp"
+                    >
+                </TextView>
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="@dimen/myname_height"
+                    android:fontFamily="sans-serif-condensed-light"
+                    android:layout_gravity="center_horizontal"
+                    android:text="3 DAYS AGO"
+                    android:background="@color/colorPrimaryLight"
+                    android:textColor="@color/Dullblack"
+                    android:paddingLeft="15dp"
+                    android:layout_marginLeft="-5dp"
+                    android:layout_marginRight="5dp"
+                    >
+                </TextView>
+            </LinearLayout>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/chitralCard"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:elevation="5dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="5dp">
+
+                    <ImageView
+                        android:id="@+id/imageView3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/chitral" />
+
+                    <TextView
+                        android:id="@+id/destination3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginBottom="50dp"
+                        android:background="@color/colorFadedBlue"
+                        android:text="Chitral"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="25sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/textViewDays3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="140dp"
+                        android:layout_marginRight="-5dp"
+                        android:background="@color/colorFadedBlue"
+                        android:text="7"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/textViewConst3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="140dp"
+                        android:layout_toEndOf="@+id/textViewDays3"
+                        android:layout_toRightOf="@+id/textViewDays3"
+                        android:text=" days Trip from "
+                        android:textColor="@color/colorWhite"
+                        android:background="@color/colorFadedBlue"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/textViewSrc3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="140dp"
+                        android:layout_toEndOf="@+id/textViewConst3"
+                        android:layout_toRightOf="@id/imageView3"
+                        android:background="@color/colorFadedBlue"
+                        android:text="Lahore"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/textViewDate3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableRight="@drawable/ic_favorite_black_24dp"
+                        android:layout_below="@+id/textViewDays3"
+                        android:background="@color/colorFadedBlue"
+                        android:text="25/12/19"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="20sp" />
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="space"
+                android:textColor="@color/colorWhite"
+                android:background="@color/colorWhite">
+
+            </TextView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="300dp"
+                    android:layout_height="@dimen/myname_height"
+                    android:fontFamily="casual"
+                    android:text="Hassan Minhas"
+                    android:textSize="@dimen/my_textsize"
+                    android:background="@color/colorPrimaryLight"
+                    android:textColor="@color/colorWhite"
+                    android:paddingLeft="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:textStyle="bold"
+                    android:layout_marginRight="5dp"
+                    >
+                </TextView>
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="@dimen/myname_height"
+                    android:fontFamily="sans-serif-condensed-light"
+                    android:layout_gravity="center_horizontal"
+                    android:text="5 DAYS AGO"
+                    android:background="@color/colorPrimaryLight"
+                    android:textColor="@color/Dullblack"
+                    android:paddingLeft="15dp"
+                    android:layout_marginLeft="-5dp"
+                    android:layout_marginRight="5dp"
+                    >
+                </TextView>
+            </LinearLayout>
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:elevation="5dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="5dp">
+
+                    <ImageView
+                        android:id="@+id/imageView4"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/skardu" />
+
+                    <TextView
+                        android:id="@+id/destination4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginBottom="50dp"
+                        android:background="@color/colorFadedBlue"
+                        android:text="Gilgit Baltistan"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="25sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/textViewDays4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="140dp"
+                        android:layout_marginRight="-5dp"
+                        android:background="@color/colorFadedBlue"
+                        android:text="12"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/textViewConst4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="140dp"
+                        android:layout_toEndOf="@+id/textViewDays4"
+                        android:layout_toRightOf="@+id/textViewDays4"
+                        android:text=" days Trip from "
+                        android:background="@color/colorFadedBlue"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/textViewSrc4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="140dp"
+                        android:layout_toEndOf="@+id/textViewConst4"
+                        android:layout_toRightOf="@id/imageView4"
+                        android:background="@color/colorFadedBlue"
+                        android:text="Sheikhupura"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/textViewDate4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableRight="@drawable/ic_favorite_black_24dp"
+                        android:layout_below="@+id/textViewDays4"
+                        android:background="@color/colorFadedBlue"
+                        android:text="18/12/19"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="20sp" />
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+</LinearLayout>

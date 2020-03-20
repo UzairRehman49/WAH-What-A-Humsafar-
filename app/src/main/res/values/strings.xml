@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">W.A.H</string>
+    <string name="title_activity_dash_board">DashBoard</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="facebook_app_id">2817000878360336</string>
+    <string name="fb_login_protocol_scheme">fb2817000878360336</string>
+    <string name= "OPEN_WEATHER_MAP_API_KEY">547d4066d1f70dffa441511d6d170621</string>
+</resources>

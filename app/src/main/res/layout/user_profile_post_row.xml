@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<!--    -->
+<!--    <androidx.cardview.widget.CardView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="200dp"-->
+<!--        android:elevation="5dp">-->
+
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:padding="5dp"
+            android:layout_marginTop="7dp"
+        android:background="@color/cardview_shadow_start_color">
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:scaleType="centerCrop"
+                />
+
+
+            <TextView
+                android:id="@+id/destination4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="50dp"
+                android:background="@color/colorFadedBlue"
+
+                android:paddingLeft="@dimen/left_padding"
+                android:textColor="@color/colorWhite"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textViewDays4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="140dp"
+                android:layout_marginRight="-5dp"
+                android:background="@color/colorFadedBlue"
+                android:text="9"
+                android:paddingLeft="@dimen/left_padding"
+                android:textColor="@color/colorWhite"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/textViewConst4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="140dp"
+                android:layout_toEndOf="@+id/textViewDays4"
+                android:layout_toRightOf="@+id/textViewDays4"
+                android:text=" days Trip from "
+                android:background="@color/colorFadedBlue"
+                android:textColor="@color/colorWhite"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/textViewSrc4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="140dp"
+                android:layout_toEndOf="@+id/textViewConst4"
+                android:layout_toRightOf="@id/imageView4"
+                android:background="@color/colorFadedBlue"
+                android:text="Lahore"
+                android:textColor="@color/colorWhite"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/textViewDate4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/left_padding"
+                android:layout_below="@+id/textViewDays4"
+                android:background="@color/colorFadedBlue"
+                android:text="2/9/19"
+                android:textColor="@color/colorWhite"
+                android:textSize="20sp" />
+</RelativeLayout>
+
+<!--    </androidx.cardview.widget.CardView>-->
+

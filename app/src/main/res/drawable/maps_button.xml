@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:state_pressed="true">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/quantum_googblue"></solid>
+            <corners android:radius="100dp"/>
+        </shape>
+    </item>
+
+
+    <item>
+        <shape android:shape="rectangle">
+            <gradient android:startColor="@color/quantum_googblue900"
+                android:endColor="@color/quantum_googblue900"/>
+            <corners android:radius="100dp"/>
+
+        </shape>
+
+    </item>
+
+
+</selector>

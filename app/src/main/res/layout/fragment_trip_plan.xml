@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/backgroung"
+    tools:context=".SignUp">
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardview2"
+        android:backgroundTint="@android:color/transparent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="60dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="2dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingBottom="50dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Destination"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:textColor="@color/colorWhite"
+                android:layout_margin="10dp">
+            </TextView>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:outlineAmbientShadowColor="@color/colorWhite"
+                android:inputType="text">
+            </EditText>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Budget"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:textColor="@color/colorWhite"
+                android:layout_margin="10dp">
+            </TextView>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:inputType="text">
+            </EditText>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Number of Days"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:textColor="@color/colorWhite"
+                android:layout_margin="10dp">
+            </TextView>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:inputType="text">
+            </EditText>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Number of People"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:textColor="@color/colorWhite"
+                android:layout_margin="10dp">
+            </TextView>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:inputType="text">
+            </EditText>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Vehicle Details"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:textColor="@color/colorWhite"
+                android:layout_margin="10dp"/>
+            <LinearLayout
+                android:layout_width="400dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                tools:context=".MainActivity">
+
+                <EditText
+                    android:layout_width="70dp"
+                    android:layout_height="40dp"
+                    android:hint="e.g.1200"
+                    android:layout_marginLeft="10dp"
+                    android:textStyle="bold"
+                    android:textSize="14sp"
+                    android:inputType="text"
+                    android:layout_margin="10dp"
+                    android:textColorHint="@color/dullwhite"
+                    >
+                </EditText>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_marginTop="-2dp"
+                    android:text="CC"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="14sp"
+                    android:textStyle="bold"></TextView>
+
+                <EditText
+                    android:layout_width="80dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="30dp"
+                    android:hint="Model"
+                    android:textStyle="bold"
+                    android:textSize="14sp"
+                    android:layout_margin="10dp"
+                    android:textColorHint="@color/dullwhite"
+                    android:gravity="center_horizontal">
+
+                </EditText>
+            </LinearLayout>
+            <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="What do you prefer?"
+                    android:textStyle="bold"
+                    android:textSize="14sp"
+                    android:layout_margin="10dp"
+                    android:textColor="@color/colorWhite"/>
+
+                <RadioButton
+                    android:id="@+id/radio_pirates"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Luxury"
+                    android:textStyle="bold"
+                    android:textSize="14sp"
+                    android:textColor="@color/colorWhite"
+                    />
+
+                <RadioButton
+                    android:id="@+id/radio_ninjas"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Budget Saving"
+                    android:textStyle="bold"
+                    android:textSize="14sp"
+                    android:textColor="@color/colorWhite"/>
+            </RadioGroup>
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+    <RelativeLayout
+        android:id="@+id/loginBtn_relative"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cardview2"
+        android:layout_marginTop="-40dp"
+        android:elevation="10dp"
+        android:layout_alignLeft="@id/cardview2"
+        android:layout_alignRight="@id/cardview2"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp">
+        <Button
+            android:id="@+id/btnGetPlan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Get Plan"
+            android:textColor="@color/colorWhite"
+            android:background="@drawable/botton_color"
+            android:textAllCaps="false"
+            >
+        </Button>
+    </RelativeLayout>
+
+</RelativeLayout>

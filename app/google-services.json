@@ -1,0 +1,56 @@
+{
+  "project_info": {
+    "project_number": "9511029273",
+    "firebase_url": "https://what-a-humsafar.firebaseio.com",
+    "project_id": "what-a-humsafar",
+    "storage_bucket": "what-a-humsafar.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:9511029273:android:6bd93b48c4419aac4cf888",
+        "android_client_info": {
+          "package_name": "com.example.wah"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "9511029273-htck19f44cv11b5af99nsaei916uqtct.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.wah",
+            "certificate_hash": "988377df8abe5dcaca0470618c71056fa251a4a4"
+          }
+        },
+        {
+          "client_id": "9511029273-8jo00ps7ha68v72155vavhi5dh8ofjuj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.wah",
+            "certificate_hash": "39e25b6a9721d3df7b69556a04b3a49072ab08f3"
+          }
+        },
+        {
+          "client_id": "9511029273-ijnt0l9d7oobmpp7u93k367cc4993v1l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDTLUuMFmfAxrkKvsXXG2qCPb-Z2ggegOo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "9511029273-ijnt0l9d7oobmpp7u93k367cc4993v1l.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroung"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/titleWAH"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="-1dp"
+            android:fontFamily="cursive"
+            android:text="What'a Humsafar"
+            android:textColor="#FFFFFF"
+            android:textColorHighlight="@color/colorWhite"
+            android:textSize="50sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-55dp"
+            android:layout_toEndOf="@id/titleWAH"
+            android:text="."
+            android:textColor="@color/colorDot"
+            android:textSize="99sp" />
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/titleWAH"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="85dp"
+            android:layout_marginRight="20dp"
+            android:backgroundTint="@android:color/transparent"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="2dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingBottom="50dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="Username"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="14sp"
+                    android:textStyle="bold"></TextView>
+
+                <EditText
+                    android:id="@+id/email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:inputType="text"
+                    android:outlineAmbientShadowColor="@color/colorWhite"
+                    android:textColor="@color/colorWhite"></EditText>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="Password"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="14sp"
+                    android:textStyle="bold"></TextView>
+
+                <EditText
+                    android:id="@+id/password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:inputType="textPassword"
+                    android:textColor="@color/colorWhite"></EditText>
+
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <RelativeLayout
+            android:id="@+id/loginBtn_relative"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cardview"
+            android:layout_alignLeft="@id/cardview"
+            android:layout_alignRight="@id/cardview"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="-40dp"
+            android:layout_marginRight="35dp"
+            android:elevation="10dp">
+
+            <Button
+                android:id="@+id/login_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/botton_color"
+                android:text="Login"
+                android:textAllCaps="false"
+                android:textColor="@color/colorWhite"></Button>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/forgotpassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/loginBtn_relative"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:elevation="5dp"
+            android:text="Forgot your password?"
+            android:textColor="@color/colorRed"
+            android:textSize="14sp" />
+
+        <com.facebook.login.widget.LoginButton
+            android:id="@+id/loginfb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/forgotpassword"
+            android:layout_alignLeft="@id/cardview"
+            android:layout_alignRight="@id/cardview"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/botton_facebook"
+            android:drawableLeft="@drawable/icon_facebook"
+            android:elevation="10dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:text="LOGIN WITH FACEBOOK"
+            android:textColor="@color/colorWhite" />
+
+        <TextView
+            android:id="@+id/SignUp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/loginfb"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:clickable="true"
+            android:elevation="5dp"
+            android:text="Don't have an account? Sign Up here"
+            android:textColor="@color/colorWhite"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/buttonTEST"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/SignUp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="61dp"
+            android:layout_marginEnd="157dp"
+            android:text="Button" />
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
